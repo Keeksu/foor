@@ -1,47 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Mulish:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: rgb(38, 75, 82);
-}
-
-.heading {
-    text-align: center;
-}
-.playground-heading {
-    color: aqua;
-    font-family: 'Mulish', sans-serif;
-    font-size: 5rem;
+    background-color: rgb(22, 76, 100);
 }
 
 .main {
-    border: 1px solid white; 
-    width: 30%; 
-    margin: 1rem auto;
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
 }
 
 .main div {
     height: 200px;
     width: 200px;
-    border: 1px solid black;
+    margin: 0 auto;
+    border: 1px solid white;
     border-radius: 50%;
-    margin: 2rem auto;
 }
 
 #red {
-    border-color: red;
+    background-color: red;
+    position: relative;
+    animation: red; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes red {
+    0% {top: -200px}
+    100% {top: 0}
+}
+
+#yellow {
+    background-color: yellow;  
+    position: relative;
+    animation: yellow; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes yellow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 #green {
-    border-color: green;
+    background-color: green;
 }
 
-#blue {
-    border-color: blue;
-}
-
-.footer {
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Fjalla One', sans-serif;
-    color: blue;
-}
+/*HINT -   transform: rotateY(0deg);*/
