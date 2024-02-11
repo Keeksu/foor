@@ -55,7 +55,7 @@ body {
     background-color: green;
     position: relative;
     animation: green; 
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-iteration-count: infinite; 
     animation-fill-mode: forwards;
     animation-timing-function: linear;
