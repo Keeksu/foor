@@ -29,6 +29,7 @@ body {
     animation: red; 
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 
 @keyframes red {
@@ -38,10 +39,10 @@ body {
 
 #yellow {
     background-color: yellow;  
-    position: relative;
     animation: yellow; 
     animation-duration: 5s;
     animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
 }
 
 @keyframes yellow {
@@ -52,6 +53,22 @@ body {
 
 #green {
     background-color: green;
+    position: relative;
+    animation: green; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
+
+@keyframes green {
+    0% {width: 200px;}
+    25% {width: 0px;}
+    50% {width: 200px;}
+    75% {width: 0px;}
+    100% {width: 200px;}
+
+}
+
 
 /*HINT -   transform: rotateY(0deg);*/
